@@ -58,6 +58,11 @@ ion-icon {
     font-family: 'Press Start 2P', cursive;
     color: #fff;
     padding: 5px 0px 5px 5px;
+    transition: color .15s, background .15s;
+    transition-property: color, background;
+    transition-duration: .15s, .15s, .15s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
 }
 .disk-menu-content a:hover {
     color: #000;
@@ -131,9 +136,51 @@ ion-icon {
     color: #fff;
 }
 
-/********** Project Page Styles *********/
-.project-title-container {
+/********** Portfolio Page Styles *********/
+.transferrable-skills-container {
+    font-family: 'Press Start 2P', cursive;
+    width: 75%;
+    margin: 100px auto 50px auto;
+}
+.transferrable-skills-container>h4 {
+    color: #c60;
     border-bottom: 2px solid #a00;
+    margin: 30px;
+}
+#transferrable-skills-cap {
+    position: relative;
+    color: #fff;
+    background: #a00;
+    max-width: 400px;
+    padding: 7px;
+    margin: -40px auto 0px auto;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 8px 9px rgb(0,0,0, .3);
+}
+.transferrable-skills-list-container {
+    background: #323232;
+    outline: 4px double #aaa;
+    outline-offset: -10px;
+    margin: 30px;
+    padding: 20px;
+}
+.transferrable-skills-list-container p{
+    color: #aaa;
+}
+.transferrable-skills {
+    color: #0aa;
+    list-style: none;
+    margin: 0;
+    padding: 5px 0px;
+}
+.transferrable-skills::before {
+    content: "[✓]";
+    color: #a00;
+    background: rgb(0, 170, 170, .2);
+    margin: 0px 10px 0px 0px;
+}
+.project-title-container {
     width: 75%;
     margin: 50px auto;
 }
@@ -141,6 +188,7 @@ ion-icon {
     color: #c60;
     font-family: 'Press Start 2P', cursive;
     margin: 5px;
+    border-bottom: 2px solid #a00;
 }
 .grid-container {
     display: flex;
@@ -205,6 +253,11 @@ ion-icon {
 #project-link:hover {
     color: #00a;
     background: #aaa;
+    transition: color .15s, background .15s;
+    transition-property: color, background;
+    transition-duration: .15s, .15s, .15s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
 }
 #project-link::before {
     content: "[";

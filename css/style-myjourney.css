@@ -52,18 +52,48 @@ body {
 
 }
 /**********Page Style**********/
-.journey-container {
-    margin: 200px auto 50px auto;
+.content-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0 50px 0;
+}
+.journey-container, .project-container{
+    display: block;
     color: #fff;
     font-family: 'Lato', sans-serif;
+    background: rgb(0,0,0, .35);
+    border-radius: 30px;
+    width: 40%;
+    backdrop-filter: blur(3px);
+    margin: 30px;
+}
+.journey-container {
+    width: 60%;
+    max-width:900px;
+    min-width: 400px;
+}
+.project-container {
+    width: 30%;
+    max-width: 400px;
+    min-width: 250px;
 }
 .journey-container h2 {
-
+    padding: 20px;
     letter-spacing: 2px;
 }
 .journey-container p {
-;
     letter-spacing: 2px;
+    padding: 20px;
+}
+.project-container a {
+    text-decoration: none;
+    color: #b3e0ff;
+    font-family: 'Lato', sans-serif;
+}
+.project-container ul {
 }
 .quote-container {
     position: relative;
