@@ -44,7 +44,7 @@ ion-icon {
     display: block;
 }
 .disk-menu-content {
-    display: block;
+    display: none;
     position: absolute;
     z-index: -1;
     text-align: left;
