@@ -21,6 +21,7 @@ ion-icon {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-bottom: 3px double #fff;
     z-index: 3;
 }
 .navbar-container p {
@@ -50,6 +51,7 @@ ion-icon {
     text-align: left;
     min-width: 100%;
     background: #a00;
+    border: 2px solid #fff;
 
 }
 .disk-menu-content a{
@@ -74,7 +76,7 @@ ion-icon {
 
 #title-text {
     font-family: 'Press Start 2P', cursive;
-    color: #0aa;
+    color: #5ff;
     text-decoration: none;
     letter-spacing: 2px;
 }
@@ -89,9 +91,6 @@ ion-icon {
 .icon-container {
     margin-left: auto;
     padding: 10px;
-    outline: 1px solid #fff;
-    outline-offset: -8px;
-
 }
 
 .icon-container ion-icon {
@@ -174,11 +173,13 @@ ion-icon {
     margin: 0;
     padding: 5px 0px;
 }
-.transferrable-skills::before {
-    content: "[✓]";
+.transferrable-skills span::before {
+    content: "[";
     color: #a00;
-    background: rgb(0, 170, 170, .2);
-    margin: 0px 10px 0px 0px;
+}
+.transferrable-skills span::after {
+    content: "]";
+    color: #a00;
 }
 .project-title-container {
     width: 75%;
@@ -187,12 +188,13 @@ ion-icon {
 .project-title-container h4 {
     color: #c60;
     font-family: 'Press Start 2P', cursive;
-    margin: 5px;
     border-bottom: 2px solid #a00;
+    margin: 30px;
 }
 .grid-container {
     display: flex;
     width: 100%;
+    margin: 60px auto;
 }
 .grid {
     display: grid;
