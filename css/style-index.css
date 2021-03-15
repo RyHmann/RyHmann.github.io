@@ -1,0 +1,300 @@
+html {
+    width: 100%;
+}
+
+body {
+    background-color: #000;
+}
+
+ion-icon {
+    color: #0aa;
+    font-size: 25px
+}
+
+/********* Navbar Styles **********/
+.navbar-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 3px solid #06FD02;
+    z-index: 3;
+}
+.navbar-container p {
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 3px;
+    display: inline;
+}
+.disk-container {
+    display: inline;
+    margin-right: auto;
+}
+.disk-menu-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.disk-menu-dropdown:hover .disk-menu-content {
+    display: block;
+}
+.disk-menu-content {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    text-align: left;
+    min-width: 100%;
+    background: #000;
+    border-left: 3px dashed #aaa;
+    border-bottom: 3px dashed #aaa;
+    border-right: 3px dashed #aaa;
+}
+.disk-menu-content a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    color: #0aa;
+    padding: 5px 0px 5px 5px;
+    transition: color .15s, background .15s, border .15s;
+    transition-property: color, background, border;
+    transition-duration: .15s, .15s, .15s, .15s;
+    transition-timing-function: ease, ease, ease;
+    transition-delay: 0s, 0s, 0s;
+}
+.disk-menu-content a:hover {
+    color: #000;
+    background: #06FD02;
+}
+.disk-menu-content a{
+    text-decoration: none;
+}
+
+.disk-container p {
+    color: #06FD02;
+    padding: 0px 0px 0px 10px;
+}
+#title-text {
+    font-family: 'Press Start 2P', cursive;
+    color: #0aa;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+#title-text:hover{
+    color: #000;
+    background: #06FD02;
+}
+
+.icon-container {
+    margin-left: auto;
+    padding: 5px 25px 5px 0px;
+}
+
+.icon-container ion-icon {
+    margin: 0px 3px;
+}
+
+/********** Homepage Styles ***********/
+.folders {
+    display: flex;
+    margin: 150px 0px;
+}
+
+.folder-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 450px;
+    width: 900px;
+}
+
+.folder-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 3px solid #06FD02;
+    z-index: -1;
+}
+.folder-back:before {
+    content: '';
+    width: 33%;
+    height: 40px;
+    position:absolute;
+    top: -40px;
+    left: -3px;
+    border: 3px solid #06FD02;
+    background: #000;
+}
+.folder-back a {
+    position: absolute;
+    top: -45px;
+    padding: 0px 0px 0px 10px;
+    text-decoration: none;
+}
+
+.folder-back #rear-folder-text{
+    font-family: 'Press Start 2P', cursive;
+    color: #06FD02;
+    transform: translate3d(0,0,0) !important;
+}
+.folder-back #rear-folder-text:hover{
+    color: #000;
+    background-color: #06FD02;
+}
+.folder-mid {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    border: 3px solid #06FD02;
+    background: #000;
+    z-index: 0;
+}
+
+.folder-front {
+    position: relative;
+    top: -250px;
+    left: 200px;
+    border: 3px solid #06FD02;
+    background: #000;
+    z-index: 1;
+}
+.folder-front p {
+    color: #06FD02;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 5px;
+}
+
+#journey-text::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+/********** Footer Styles **********/
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 3px solid #06FD02;
+    background: #000;
+    z-index: 3;
+}
+.footer-container p {
+    display: inline;
+    font-family: 'Press Start 2P', cursive;
+}
+#copyright {
+    display: inline;
+    padding: 10px
+}
+#copyright p{
+    color: #aaa;
+}
+#avail-memory {
+    display: inline;
+    margin-left: auto;
+    padding: 10px;
+}
+#avail-memory p{
+    color: #fff;
+}
+
+/********** Project Page Styles *********/
+.project-title-container {
+    border-bottom: 2px solid #a00;
+    width: 75%;
+    margin: 50px auto;
+}
+.project-title-container h4 {
+    color: #c60;
+    font-family: 'Press Start 2P', cursive;
+    margin: 5px;
+}
+.grid-container {
+    display: flex;
+    width: 100%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 60px;
+    grid-row-gap: 60px;
+    margin: 0px auto;
+}
+.card {
+    position: relative;
+    font-family: 'Press Start 2P', cursive;
+    background: #323232;
+    box-sizing: border-box;
+    outline: 4px double #aaa;
+    outline-offset: -10px;
+    padding: 10px;
+    border: 2px solid rgb(0,0,0,.5);
+}
+.cap {
+    position: relative;
+    color: #fff;
+    background: #a00;
+    width: 300px;
+    padding: 7px;
+    margin: -20px auto 0px auto;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 8px 9px rgb(0,0,0, .3);
+}
+.card::before {
+    filter: saturate(0) brightness(.633);
+}
+.shadowbox::before {
+    content: ' ';
+    z-index: -1;
+    position: absolute;
+    display: block;
+    background-image: url(/assets/shadow_box.png);
+    width: 100%;
+    height: 100%;
+    top: 15px;
+    left: 15px;
+}
+
+#project-specs::before {
+    content: ">>";
+    color: #a00;
+}
+.card-contents p{
+    color: #0aa;
+    margin: 20px 0px;
+    padding: 5px;
+    line-height: 25px;
+}
+.card-contents a {
+    text-decoration: none;
+}
+#project-link:hover {
+    color: #00a;
+    background: #aaa;
+}
+#project-link::before {
+    content: "[";
+    color: #aaa;
+}
+#project-link:hover::before{
+    color: #323232;
+}
+#project-link::after {
+    content: "]";
+    color: #aaa;
+}
+#project-link:hover::after{
+    color: #323232;
+}

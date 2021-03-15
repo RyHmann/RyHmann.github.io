@@ -1,0 +1,222 @@
+html {
+    width: 100%;
+}
+
+body {
+    background-color: #000;
+}
+
+ion-icon {
+    color: #0aa;
+    font-size: 25px
+}
+
+/********* Navbar Styles **********/
+.navbar-container {
+    width: 100%;
+    position: fixed;
+    background: #323232;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 3;
+}
+.navbar-container p {
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 3px;
+    display: inline;
+}
+.disk-container {
+    display: inline;
+    margin-right: auto;
+}
+.disk-container p {
+    color: #fff;
+    padding: 0px 0px 0px 10px
+}
+.disk-menu-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.disk-menu-dropdown:hover .disk-menu-content {
+    display: block;
+}
+.disk-menu-content {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    text-align: left;
+    min-width: 100%;
+    background: #a00;
+
+}
+.disk-menu-content a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    padding: 5px 0px 5px 5px;
+}
+.disk-menu-content a:hover {
+    color: #000;
+    background: #aaa;
+}
+.disk-menu-content a{
+    text-decoration: none;
+}
+
+#title-text {
+    font-family: 'Press Start 2P', cursive;
+    color: #0aa;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+#title-text::before {
+    content: ">>";
+    color: #a00;
+}
+#title-text:hover{
+    color: #ff5;
+}
+
+.icon-container {
+    margin-left: auto;
+    padding: 10px;
+    outline: 1px solid #fff;
+    outline-offset: -8px;
+
+}
+
+.icon-container ion-icon {
+    margin: 0px 3px;
+}
+.icon-container ion-icon:hover {
+    color: #fff;
+    background: 
+}
+
+
+/********** Footer Styles **********/
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #c60;
+    background: #000;
+    z-index: 3;
+}
+.footer-container p {
+    display: inline;
+    font-family: 'Press Start 2P', cursive;
+}
+#copyright {
+    display: inline;
+    padding: 10px
+}
+#copyright p{
+    color: #aaa;
+}
+#avail-memory {
+    display: inline;
+    margin-left: auto;
+    padding: 10px;
+}
+#avail-memory p{
+    color: #fff;
+}
+
+/********** Project Page Styles *********/
+.project-title-container {
+    border-bottom: 2px solid #a00;
+    width: 75%;
+    margin: 50px auto;
+}
+.project-title-container h4 {
+    color: #c60;
+    font-family: 'Press Start 2P', cursive;
+    margin: 5px;
+}
+.grid-container {
+    display: flex;
+    width: 100%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 60px;
+    grid-row-gap: 60px;
+    margin: 0px auto;
+}
+.card {
+    position: relative;
+    font-family: 'Press Start 2P', cursive;
+    background: #323232;
+    box-sizing: border-box;
+    outline: 4px double #aaa;
+    outline-offset: -10px;
+    padding: 10px;
+    border: 2px solid rgb(0,0,0,.5);
+}
+.cap {
+    position: relative;
+    color: #fff;
+    background: #a00;
+    width: 300px;
+    padding: 7px;
+    margin: -20px auto 0px auto;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 8px 9px rgb(0,0,0, .3);
+}
+.card::before {
+    filter: saturate(0) brightness(.633);
+}
+.shadowbox::before {
+    content: ' ';
+    z-index: -1;
+    position: absolute;
+    display: block;
+    background-image: url(/assets/shadow_box.png);
+    width: 100%;
+    height: 100%;
+    top: 15px;
+    left: 15px;
+}
+
+#project-specs::before {
+    content: ">>";
+    color: #a00;
+}
+.card-contents p{
+    color: #0aa;
+    margin: 20px 0px;
+    padding: 5px;
+    line-height: 25px;
+}
+.card-contents a {
+    text-decoration: none;
+}
+#project-link:hover {
+    color: #00a;
+    background: #aaa;
+}
+#project-link::before {
+    content: "[";
+    color: #aaa;
+}
+#project-link:hover::before{
+    color: #323232;
+}
+#project-link::after {
+    content: "]";
+    color: #aaa;
+}
+#project-link:hover::after{
+    color: #323232;
+}

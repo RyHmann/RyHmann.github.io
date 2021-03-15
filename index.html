@@ -3,7 +3,7 @@
 <head>
     <title>Hi, I'm Ryan</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style-index.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="scripts/scripts.js"></script>
@@ -12,10 +12,21 @@
 <header>
     <div class="navbar-container">
         <div class="disk-container">
-            <p id="disk-text">Disk:Disk 1</p>
-        </div>
-        <div class="title-container">
-            <p id="title-text">[HOMEPAGE]</p>
+            <p id="disk-text">Disk:</p>
+            <div class="disk-menu-dropdown">
+                <a id="title-text" href="/index.html">[HOMEPAGE]</a>
+                <div class="disk-menu-content">
+                    <a href="/portfolio.html">
+                        Portfolio
+                    </a>
+                    <a href="/myjourney.html">
+                        My Journey
+                    </a>
+                    <a href="/assets/ryanHeitmann_cv.pdf" target="_blank">
+                        Resume/CV
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="icon-container">
             <a class="icon-link" href="https://github.com/RyHmann" target="_blank">
@@ -35,12 +46,12 @@
         </a>
     </div>
     <div class="folder-back folder-mid">
-        <a href="projects.html">
-            <h4 id="rear-folder-text">>>SKILLSET</h4>
+        <a href="/portfolio.html">
+            <h4 id="rear-folder-text">>>PORTFOLIO</h4>
         </a>
     </div>
     <div class="folder-back folder-front">
-        <a href="journey.html">
+        <a href="/myjourney.html">
             <h4 id="rear-folder-text">>>MY JOURNEY</h4>
         </a>
         <p id="journey-text"></p>
