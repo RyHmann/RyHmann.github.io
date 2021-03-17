@@ -1,10 +1,11 @@
 var i = 0;
-var typewriterText = `Hello there, I'm Ryan\nI'm an electrical engineer`;
+var typewriterText = `Hello there, I'm Ryan\nI'm an electrical engineer\nI used to design sports stadiums\nI want to design software`;
 var speed = 150;
 
 function typeWriter() {
     if (i < typewriterText.length) {
-        document.getElementById("journey-text").innerHTML += typewriterText.charAt(i);
+        let text=typewriterText.charAt(i);
+        document.getElementById("journey-text").innerHTML += text === "\n" ? "<br>": text;
         i++;
         setTimeout(typeWriter, speed);
     }

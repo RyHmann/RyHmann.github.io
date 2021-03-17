@@ -1,4 +1,6 @@
 html {
+    height: 100%;
+    width: 100%;
 }
 body {
     background: linear-gradient(to bottom, rgba(0,0,0, 0.4), rgba(0,0,0,0.4)), url(/assets/beam.jpg) no-repeat;
@@ -54,11 +56,11 @@ body {
 /**********Page Style**********/
 .content-container {
     display: flex;
+    position: fixed;
     flex-direction: row;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     padding: 50px 0 50px 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 .journey-container, .project-container{
     display: block;
@@ -72,20 +74,25 @@ body {
 }
 .journey-container {
     width: 60%;
-    max-width:900px;
-    min-width: 400px;
+    min-width: 800px;
+}
+.journey-container p {
+    margin: 0px;
+    padding: 0px;
 }
 .project-container {
     width: 30%;
-    max-width: 400px;
-    min-width: 250px;
+    min-width: 400px;
 }
 .journey-container h2 {
     padding: 20px;
     letter-spacing: 2px;
 }
 .journey-container p {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+.project-container h2 {
     padding: 20px;
 }
 .project-container a {
@@ -93,12 +100,20 @@ body {
     color: #b3e0ff;
     font-family: 'Lato', sans-serif;
 }
-.project-container ul {
+.project-container a:hover{
+    color:#f77f00;
 }
+.project-container p {
+    padding: 0px 20px;
+    letter-spacing: 1px;
+}
+
 .quote-container {
-    position: relative;
+    position: fixed;
     width: 100%;
     display: flex;
+    bottom: 0px;
+    right: 0px;
 }
 .quote-container blockquote {
     color: #fff;
