@@ -7,7 +7,7 @@ body {
 }
 
 ion-icon {
-    color: #0aa;
+    color: #5ff;
     font-size: 25px
 }
 
@@ -136,6 +136,7 @@ ion-icon {
 /********** Portfolio Page Styles *********/
 .transferrable-skills-container {
     font-family: 'Press Start 2P', cursive;
+    max-width: 1400px;
     width: 75%;
     margin: 100px auto 50px auto;
 }
@@ -156,11 +157,16 @@ ion-icon {
     box-shadow: 8px 9px rgb(0,0,0, .3);
 }
 .transferrable-skills-list-container {
+    position: relative;
     background: #323232;
     outline: 4px double #aaa;
     outline-offset: -10px;
     margin: 30px;
     padding: 20px;
+    border: 2px solid rgb(0,0,0,.5);
+}
+.transferrable-skills-list-container::before {
+    filter: saturate(0) brightness(.633);
 }
 .transferrable-skills-list-container p{
     color: #aaa;
@@ -181,9 +187,10 @@ ion-icon {
 }
 .project-title-container {
     width: 75%;
+    max-width: 1400px;
     margin: 50px auto;
 }
-.project-title-container h4 {
+.project-title {
     color: #c60;
     font-family: 'Press Start 2P', cursive;
     border-bottom: 2px solid #a00;
@@ -226,7 +233,7 @@ ion-icon {
     filter: saturate(0) brightness(.633);
 }
 .shadowbox::before {
-    content: ' ';
+    content: '';
     z-index: -1;
     position: absolute;
     display: block;
@@ -236,12 +243,11 @@ ion-icon {
     top: 15px;
     left: 15px;
 }
-
-#project-specs::before {
+.project-specs::before {
     content: ">>";
     color: #a00;
 }
-.card-contents p{
+.card-contents > p{
     color: #0aa;
     margin: 20px 0px;
     padding: 5px;
@@ -250,7 +256,12 @@ ion-icon {
 .card-contents a {
     text-decoration: none;
 }
-#project-link:hover {
+.project-link {
+    color: #5ff;
+    padding: 5px;
+    margin: 20px 0px;
+}
+.project-link:hover {
     color: #00a;
     background: #aaa;
     transition: color .15s, background .15s;
@@ -259,17 +270,17 @@ ion-icon {
     transition-timing-function: ease, ease;
     transition-delay: 0s, 0s;
 }
-#project-link::before {
+.project-link::before {
     content: "[";
     color: #aaa;
 }
-#project-link:hover::before{
+.project-link:hover::before{
     color: #323232;
 }
-#project-link::after {
+.project-link::after {
     content: "]";
     color: #aaa;
 }
-#project-link:hover::after{
+.project-link:hover::after{
     color: #323232;
 }
