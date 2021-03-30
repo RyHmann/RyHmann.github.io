@@ -7,7 +7,8 @@ body {
     background-size: cover;
     overflow: hidden;
     margin: 0px;
-    min-width: 200px;
+    min-width: 390px;
+    padding: 50px 0 0 0;
 }
 
 /************Navbar Style**********/
@@ -57,12 +58,9 @@ body {
 /**********Page Style**********/
 .content-container {
     display: flex;
-    position: fixed;
     flex-direction: row;
-    padding: 50px 0 50px 0;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-content: space-around;
 }
 .journey-container, .project-container{
     display: block;
@@ -75,16 +73,33 @@ body {
 }
 .journey-container {
     width: 60%;
-    min-width: 800px;
+    max-width: 800px;
 }
+.project-container {
+    width: 30%;
+    max-width: 400px;
+}
+@media screen and (max-width: 900px)
+{
+    .content-container {
+        flex-direction: column;
+    }
+    .journey-container {
+        min-width: 400px;
+    }
+    .project-container {
+        min-width: 300px;
+    }
+    .quote-container {
+        float: left;
+    }
+}
+
 .journey-container p {
     margin: 0px;
     padding: 0px;
 }
-.project-container {
-    width: 30%;
-    min-width: 400px;
-}
+
 .journey-container h2 {
     padding: 20px;
     letter-spacing: 2px;
