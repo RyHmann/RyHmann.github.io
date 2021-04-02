@@ -7,7 +7,6 @@ body {
     background-size: cover;
     overflow: hidden;
     margin: 0px;
-    min-width: 390px;
     padding: 50px 0 0 0;
 }
 
@@ -81,6 +80,12 @@ body {
 }
 @media screen and (max-width: 900px)
 {
+    body {
+        height: 100%;
+        background-size: 650%;
+        background-position: left;
+        overflow: auto;
+    }
     .content-container {
         flex-direction: column;
     }
@@ -91,7 +96,10 @@ body {
         min-width: 300px;
     }
     .quote-container {
-        float: left;
+        display: none;
+    }
+    .quote-container blockquote {
+        display: none;
     }
 }
 
