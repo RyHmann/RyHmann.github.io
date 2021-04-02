@@ -203,11 +203,22 @@ ion-icon {
     margin: 60px auto;
 }
 .grid {
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
-    column-gap: 60px;
-    grid-row-gap: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0px auto;
+}
+@media screen and (min-width: 1200px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        column-gap: 60px;
+        grid-row-gap: 40px;
+        margin: 0px auto;
+    }
+    .card {
+        margin: 0px 20px;
+    }
 }
 .card {
     position: relative;
@@ -215,9 +226,11 @@ ion-icon {
     background: #323232;
     box-sizing: border-box;
     outline: 4px double #aaa;
+    width: 400px;
     outline-offset: -10px;
     padding: 10px;
     border: 2px solid rgb(0,0,0,.5);
+    margin: 30px auto;
 }
 .cap {
     position: relative;
