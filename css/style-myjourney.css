@@ -61,6 +61,10 @@ body {
     justify-content: center;
     align-content: space-around;
 }
+.content-container h2, p {
+    margin: 5px;
+    padding: 5px;
+}
 .journey-container, .project-container{
     display: block;
     color: #fff;
