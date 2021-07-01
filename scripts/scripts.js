@@ -1,5 +1,5 @@
 var i = 0;
-var typewriterText = `Hello there, I'm Ryan\nI'm an electrical engineer\nI used to design sports stadiums\nI want to design software`;
+var typewriterText = `Hello there, I'm Ryan\nI'm an electrical engineer\nI used to design sports stadia\nI want to design software`;
 var speed = 150;
 
 function typeWriter() {
